@@ -27,10 +27,6 @@ jobs:
         project_id: ${{ secrets.GCP_PROJECT_ID }}
         export_default_credentials: true
 
-    # Build and push the Docker image
-    - name: Build and Push Docker image
-      run: |
-        gcloud builds submit --no-source --tag gcr.io/[PROJECT_ID]/[IMAGE_NAME]
 
         
 
